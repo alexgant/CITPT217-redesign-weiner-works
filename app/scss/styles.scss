@@ -1,0 +1,180 @@
+//pulls in bootstrap/sass variables and codes
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+//custom CSS
+html{
+  background: $dull-red;
+  height: 100%;
+}
+
+body{
+  background: $pale-yellow;
+  color: white;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+//styles for nav bar
+nav{
+  width: 1200px;
+}
+
+//styles for HEADER ITEMS
+
+.header-banner{
+  background-color: $dark-grey;
+}
+
+.btn-primary{
+  background-color: $dull-red;
+  border: none;
+}
+
+.btn-primary:hover{
+  background-color: #70251f;
+  border: none;
+
+}
+
+//Styles for HOURS AND LOCATION
+main{
+  width: 100%;
+  display: block;
+}
+.hours-location{
+  padding: 1%;
+  color: black;
+}
+
+.hours-location h3{
+  text-align: center;
+  font-size: 250%;
+}
+
+.hours-location p{
+  margin: 0;
+}
+
+p a{
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+
+p a:hover{
+  font-weight: bold;
+  color: $dull-red;
+}
+
+.hours p{
+  margin: 0;
+}
+
+.dine-in, .days {
+  margin-left: 2%;
+}
+
+//styles for item and pricing on homepage
+.items-pricing{
+  background-color: white;
+  color: $black;
+  margin: 0;
+}
+
+.menu-link{
+  color: $dull-red;
+  text-decoration: underline;
+}
+
+.menu-link:hover{
+  color: #70251f;
+}
+
+.wonderdog{
+  color: $dull-red;
+  font-weight: bold;
+}
+
+//styles for gallery section of hp
+.gallery-hp{
+  background-color: $pale-yellow;
+  padding-bottom: 20px;
+}
+
+.gallery-hp h2{
+  color: black;
+  padding-bottom: 20px;
+}
+
+.carousel-img{
+  width: 50%;
+   margin: auto;
+}
+
+
+//Styles for the footer
+footer{
+  background-color: $light-grey;
+}
+
+div.footer-copyright{
+  background-color: $dark-grey;
+}
+
+
+//1. Sass/SCSS Variables:
+$dark-grey: #2F2F2F;
+$light-grey: #3A3A3A;
+$pale-yellow: #ffe08c;
+$dull-red: #bd3e35;
+
+//3. Sass/SCSS Nesting:
+div.tab-content{
+  h1{
+    color: $dull-red;
+  }
+  li{
+    list-style: none;
+  }
+  h2{
+    color: $dark-grey;
+  }
+  p{
+    color: $light-grey;
+    font-size: 14px;
+  }
+}
+
+section.menu-tabs{
+  margin: 1em;
+
+  a{
+    color: white;
+    background-color: $dark-grey;
+  }
+  a:hover{
+      color: white;
+      background-color: $light-grey;
+    }
+  a.nav-link.active{
+    color:white;
+    background-color: $dull-red;
+  }
+}
+
+//2. Sass/SCSS mixin:
+@mixin header($color) {
+  text-align: center;
+  font-size: 36px;
+  color: $color;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
+.header{
+  @include header($dark-grey);
+}
