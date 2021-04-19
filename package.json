@@ -17,6 +17,7 @@
     "boostrap": "^2.0.0",
     "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
+    "lightbox2": "^2.11.3",
     "node-sass": "^5.0.0",
     "popper.js": "^1.16.1"
   }

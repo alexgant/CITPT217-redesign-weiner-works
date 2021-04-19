@@ -10,7 +10,7 @@
   <!--HEADER -->
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <a class="navbar-brand" href="index.html">WeinerWorks</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
           <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="menu.html">Menu</a>
           <a class="nav-item nav-link" href="#">Sales</a>
-          <a class="nav-item nav-link" href="#">Gallery</a>
+          <a class="nav-item nav-link" href="gallery.html">Gallery</a>
         </div>
       </div>
     </nav>
@@ -34,58 +34,57 @@
       <a class="btn btn-primary" href="https://www.grubhub.com/restaurant/wiener-works-5207-madison-ave-ste-c-sacramento/383533" target="_blank" role="button">Order on GrubHub</a>
     </div class="p-5 text-center">
 
+    <hr></hr>
     <!-- location and hours section -->
     <section class= "hours-location">
-      <div class="hours-location-container">
-        <<h1 class="header">Hours and Location</h1>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h5>Location</h5>
-              <p>on Madison between Hemlock and Auburn Blvd.</p>
-              <p class="address">
-                <a href="https://goo.gl/maps/xLjLtcK5XWV1x1iJA" target="_blank">
-                Address: 5207 Madison Ave #C
-                <br>Sacramento CA 95841
-                </a>
-              </p>
-              <p>Phone: <a href="tel:916-334-8711">(916)334-8711</a></p>
-            </div>
-            <div class="col">
-              <h5>Hours</h5>
-              <div class="container hours">
-                <div class="row">
-                  <div class="col- days">
-                    <p><b>Days</b></p>
-                    <p>Monday:</p>
-                    <p>Tuesday:</p>
-                    <p>Wednesday:</p>
-                    <p>Thursday:</p>
-                    <p>Friday:</p>
-                    <p>Saturday:</p>
-                    <p>Sunday:</p>
-                  </div>
-                  <div class="col- dine-in">
-                    <p><b>Dine-in</b></p>
-                    <p>11am - 3pm</p>
-                    <p>11am - 3pm</p>
-                    <p>11am - 3pm</p>
-                    <p>11am - 3pm</p>
-                    <p>11am - 3pm</p>
-                    <p>11am - 3pm</p>
-                    <p>CLOSED
-                  </div>
-                  <div class="col take-out">
-                    <p><b>Takeout</b></p>
-                    <p>11am - 4pm</p>
-                    <p>11am - 4pm</p>
-                    <p>11am - 4pm</p>
-                    <p>11am - 4pm</p>
-                    <p>11am - 4pm</p>
-                    <p>11am - 4pm</p>
-                    <p>CLOSED
-                  </div>
-                </div>
+      <h1 class="header">Hours and Location</h1>
+
+      <div class="container hours-location">
+        <div class="row">
+
+          <div class="col location">
+            <h5>Location</h5>
+            <p>on Madison between Hemlock and Auburn Blvd.</p>
+            <p class="address">
+              <a href="https://goo.gl/maps/xLjLtcK5XWV1x1iJA" target="_blank">
+              Address: 5207 Madison Ave #C
+              <br>Sacramento CA 95841
+              </a>
+            </p>
+            <p>Phone: <a href="tel:916-334-8711">(916)334-8711</a></p>
+          </div>
+
+          <div class="col hours">
+            <div class="row">
+              <div class="col-md-auto days">
+                <h5>Days</h5>
+                <p>Monday:</p>
+                <p>Tuesday:</p>
+                <p>Wednesday:</p>
+                <p>Thursday:</p>
+                <p>Friday:</p>
+                <p>Saturday:</p>
+                <p>Sunday:</p>
+              </div>
+              <div class="col-md-auto dine-in">
+                <h5>Dine-in</h5>
+                <p>11am - 3pm</p>
+                <p>11am - 3pm</p>
+                <p>11am - 3pm</p>
+                <p>11am - 3pm</p>
+                <p>11am - 3pm</p>
+                <p>11am - 3pm</p>
+                <p>CLOSED
+              </div>
+              <div class="col-md-auto take-out">
+                <h5>Takeout</h5>
+                <p>11am - 4pm</p>
+                <p>11am - 4pm</p>
+                <p>11am - 4pm</p>
+                <p>11am - 4pm</p>
+                <p>11am - 4pm</p>
+                <p>11am - 4pm</p>
+                <p>CLOSED
               </div>
             </div>
           </div>
@@ -93,20 +92,30 @@
       </div>
     </section>
 
+    <hr></hr>
     <!-- menu and prices -->
-    <section>
-      <div class="jumbotron items-pricing">
-        <h1 class="header">Menu</h1>
-        <h2 class="">Check out <a href="#" class="menu-link">menu</a> for items and pricing!</h2>
+    <section class="main">
+      <div class="menu">
+        <h1 class="header">
+          <a class="header-link middle2" href="menu.html">
+            Menu
+          </a>
+        </h1>
+        <h2 class="subheader">Check out <a href="#" class="menu-link middle">Menu</a> for items and pricing!</h2>
         <p class="lead">Weinerworks is home of the <span class="wonderdog">Wonderdog!</span> 14 inches of hot dog on a loaf of soft french bread.</p>
       </div>
     </section>
 
+    <hr></hr>
     <!-- gallery link and carousel -->
-    <section>
-      <div class="jumbotron gallery-hp">
-        <h1 class="header">Gallery</h1>
-        <h2 class="">Take a look at our <a href="#" class="menu-link">Gallery</a> for more pictures!</h2>
+    <section class="main">
+      <div class="gallery">
+        <h1 class="header">
+          <a class="header-link middle2" href="gallery.html">
+            Gallery
+          </a>
+        </h1>
+        <h2 class="subheader">Take a look at our <a href="gallery.html" class="menu-link middle">Gallery</a> for more pictures!</h2>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -132,11 +141,14 @@
     </section>
 
 
+
   </main>
 
   <!--FOOTER -->
   <footer>
-    <div class="container p-4 pb-0">
+
+    <div class="container">
+
       <section class="footer-links">
         <p class="d-flex justify-content-center align-items-center">
           <span class="me-3">Order through GrubHub</span>
@@ -145,13 +157,14 @@
           <button type="button" class="btn btn-outline-light btn-rounded footer-btn">
             Order Now!
           </button>
-      </p>
+        </p>
+        <p class="d-flex justify-content-center align-items-center">
+          © 2021 Copyright
+        </p>
       </section>
+
     </div>
 
-    <div class="text-center p-3 footer-copyright">
-      © 2021 Copyright:
-    </div>
   </footer>
 
   <!-- SCRIPTS for added JS files -->

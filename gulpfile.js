@@ -13,7 +13,7 @@ gulp.task('sass', function() {
 
 //js function that will create the /app/js folder and put each of the listed javascript files in it
 gulp.task('js', function() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js', 'node_modules/lightbox2/dist/js/lightbox-plus-jquery.js'])
         .pipe(gulp.dest("app/js"))
         .pipe(browserSync.stream());
 });
