@@ -165,9 +165,6 @@ p a:hover{
   color: $ww-red;
 }
 
-.hours{
-  text-align: right;
-}
 
 .hours p{
   margin: 0;
@@ -175,6 +172,11 @@ p a:hover{
 
 .dine-in, .days, .take-out {
   margin-left: 2%;
+}
+
+.hours-location{
+  display: flex;
+  justify-content: center;
 }
 
 //<----------------------------------------------------------------------------->
@@ -326,13 +328,16 @@ section.menu-tabs{
 //<----------------------------------------------------------------------------->
 //CSS for Mobile view:
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 995px) {
 
   div.location{
     margin-bottom: 5%;
   }
 
-
+  .hours-location{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 
@@ -340,7 +345,7 @@ section.menu-tabs{
 
 
 
-
+//<----------------------------------------------------------------------------->
 //light box css copy and pasted:
 body.lb-disable-scrolling {
   overflow: hidden;
