@@ -7308,14 +7308,15 @@ p a:hover {
   font-weight: bold;
   color: #CC3333; }
 
-.hours {
-  text-align: right; }
-
 .hours p {
   margin: 0; }
 
 .dine-in, .days, .take-out {
   margin-left: 2%; }
+
+.hours-location {
+  display: flex;
+  justify-content: center; }
 
 .items-pricing {
   color: #ffffff;
@@ -7416,9 +7417,12 @@ section.menu-tabs {
   width: 400px;
   height: 300px; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 995px) {
   div.location {
-    margin-bottom: 5%; } }
+    margin-bottom: 5%; }
+  .hours-location {
+    display: flex;
+    justify-content: center; } }
 
 body.lb-disable-scrolling {
   overflow: hidden; }
