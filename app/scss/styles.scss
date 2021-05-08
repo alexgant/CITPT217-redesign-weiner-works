@@ -202,7 +202,7 @@ p a:hover{
 }
 
 .carousel-img{
-  width: 50%;
+  width: 70%;
    margin: auto;
 }
 
@@ -337,6 +337,11 @@ section.menu-tabs{
   .hours-location{
     display: flex;
     justify-content: center;
+  }
+
+  .carousel-img{
+    width: 80%;
+     margin: auto;
   }
 }
 
@@ -550,4 +555,34 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+.col-md-8{
+    padding-top: 10%;
+}
+
+.mascot{
+  width:100%;
+  margin: auto;
+  display: block;
+
+}
+
+@media only screen and (max-width: 780px) {
+  .mascot{
+    width:70%;
+    margin: auto;
+    display: block;
+  }
+}
+
+.table{
+  width: 100%;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.table-hover tbody tr:hover {
+    color: $ww-charcoal;
+    background-color: white;
 }

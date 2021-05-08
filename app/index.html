@@ -12,10 +12,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">WeinerWorks</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="menu.html">Menu</a>
@@ -28,11 +28,24 @@
   <!--MAIN -->
   <main>
     <!-- Page Header -->
-    <div class="p-5 text-center header-banner">
-      <h1 class="mb-3">Welcome to Weiner Works!</h1>
-      <h4 class="mb-3">For the best hot dogs and hamburgers in Sacramento</h4>
-      <a class="btn btn-primary" href="https://www.grubhub.com/restaurant/wiener-works-5207-madison-ave-ste-c-sacramento/383533" target="_blank" role="button">Order on GrubHub</a>
-    </div class="p-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/ww-mascot.png" class="mascot">
+        </div>
+        <div class="col-md-8 header-container">
+          <div class="text-center header-banner">
+            <h1 class="mb-3">Welcome to Weiner Works!</h1>
+            <h4 class="mb-3">For the best hot dogs and hamburgers in Sacramento</h4>
+            <a class="btn btn-primary" href="https://www.grubhub.com/restaurant/wiener-works-5207-madison-ave-ste-c-sacramento/383533" target="_blank" role="button">Order on GrubHub</a>
+          </div class="p-5 text-center">
+
+
+
+        </div>
+      </div>
+
+    </div>
 
     <hr></hr>
     <!-- location and hours section -->
@@ -55,38 +68,58 @@
           </div>
 
           <div class="col-lg hours">
-            <div class="row">
-              <div class="col-xs-auto days">
-                <h5>Days</h5>
-                <p>Monday:</p>
-                <p>Tuesday:</p>
-                <p>Wednesday:</p>
-                <p>Thursday:</p>
-                <p>Friday:</p>
-                <p>Saturday:</p>
-                <p>Sunday:</p>
-              </div>
-              <div class="col-xs-auto dine-in">
-                <h5>Dine-in</h5>
-                <p>11am - 3pm</p>
-                <p>11am - 3pm</p>
-                <p>11am - 3pm</p>
-                <p>11am - 3pm</p>
-                <p>11am - 3pm</p>
-                <p>11am - 3pm</p>
-                <p>CLOSED
-              </div>
-              <div class="col-xs-auto take-out">
-                <h5>Takeout</h5>
-                <p>11am - 4pm</p>
-                <p>11am - 4pm</p>
-                <p>11am - 4pm</p>
-                <p>11am - 4pm</p>
-                <p>11am - 4pm</p>
-                <p>11am - 4pm</p>
-                <p>CLOSED
-              </div>
-            </div>
+            <table class="table table-hover">
+              <thead>
+                <tr class-days>
+                  <th scope="col"><h5>Days</h5></th>
+                  <th scope="col"><h5>Dine-in</h5></th>
+                  <th scope="col"><h5>Takeout</h5></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday:</td>
+                  <td>11am-3pm</td>
+                  <td>11am-4pm</td>
+                </tr>
+                <tr>
+
+                  <td>Tuesday:</td>
+                  <td>11am-3pm</td>
+                  <td>11am-4pm</td>
+                </tr>
+                <tr>
+
+                  <td>Wednesday:</td>
+                  <td>11am-3pm</td>
+                  <td>11am-4pm</td>
+                </tr>
+                <tr>
+
+                  <td>Thursday:</td>
+                  <td>11am-3pm</td>
+                  <td>11am-4pm</td>
+                </tr>
+                <tr>
+
+                  <td>Friday</td>
+                  <td>11am-3pm</td>
+                  <td>11am-4pm</td>
+                </tr>
+                <tr>
+
+                  <td>Saturday</td>
+                  <td>11am-3pm</td>
+                  <td>11am-4pm</td>
+                </tr>
+                <tr>
+
+                  <td>Sunday:</td>
+                  <td>CLOSED</td>
+                  <td>CLOSED</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -101,7 +134,7 @@
             Menu
           </a>
         </h1>
-        <h2 class="subheader">Check out <a href="#" class="menu-link middle">Menu</a> for items and pricing!</h2>
+        <h2 class="subheader">Check out <a href="menu.html" class="menu-link middle">Menu</a> for items and pricing!</h2>
         <p class="lead">Weinerworks is home of the <span class="wonderdog">Wonderdog!</span> 14 inches of hot dog on a loaf of soft french bread.</p>
       </div>
     </section>
