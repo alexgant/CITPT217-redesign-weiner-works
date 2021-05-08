@@ -1,55 +1,65 @@
 //pulls in bootstrap/sass variables and codes
 @import 'variables';
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-
-
-//<----------------------------------------------------------------------------->
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'; //<----------------------------------------------------------------------------->
 //custom CSS
-html{
+
+html {
   background: $ww-charcoal;
   height: 100%;
+  width: 100%;
 }
 
-body{
+.popover-title {
+  color: blue;
+  font-size: 15px;
+}
+
+button.btn-danger {
+  background-color: $ww-yellow;
+}
+
+button.btn-danger:hover {
+  background-color: $ww-red;
+}
+
+body {
   background: $ww-charcoal;
   color: white;
   max-width: 1200px;
   margin: auto;
-
 }
 
-hr{
+hr {
   border-top: 1px solid $ww-red;
   width: 95%;
 }
 
-main{
+main {
   margin-top: 20px;
   width: 100%;
   display: block;
 }
 
-section{
+section {
   padding: 2%;
   width: 90%;
   margin: auto;
 }
 
-.subheader{
+.subheader {
   text-align: center;
   padding-bottom: 3%;
 }
 
-.lead{
+.lead {
   text-align: center;
 }
-
 //styles for nav bar
-nav{
+
+nav {
   width: 100%;
   background-color: $black;
 }
-
 //<----------------------------------------------------------------------------->
 //styles for HEADER ITEMS
 @mixin header($color) {
@@ -60,44 +70,42 @@ nav{
   padding-bottom: 2%;
 }
 
-.header{
+.header {
   @include header($ww-red);
 }
 
-
-.btn-primary{
+.btn-primary {
   background-color: $ww-yellow;
   border: none;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: $ww-red;
   border: none;
-
 }
 
-.menu-link{
-  color: $ww-yellow;
-  text-decoration: none;
-}
-.menu-link:hover{
+.menu-link {
   color: $ww-yellow;
   text-decoration: none;
 }
 
-.header-link{
-  color:$ww-red;
+.menu-link:hover {
+  color: $ww-yellow;
   text-decoration: none;
 }
 
-.header-link:hover{
-  color:$ww-red;
+.header-link {
+  color: $ww-red;
   text-decoration: none;
 }
 
-.middle
-{
-    position: relative;
+.header-link:hover {
+  color: $ww-red;
+  text-decoration: none;
+}
+
+.middle {
+  position: relative;
 }
 
 .middle:before {
@@ -118,9 +126,8 @@ nav{
   transform: scaleX(1);
 }
 
-.middle2
-{
-    position: relative;
+.middle2 {
+  position: relative;
 }
 
 .middle2:before {
@@ -140,218 +147,268 @@ nav{
   visibility: visible;
   transform: scaleX(1);
 }
-
 //<----------------------------------------------------------------------------->
 //Styles for HOURS AND LOCATION
-.hours-location{
+
+.hours-location {
   padding: 1%;
   color: $white;
   width: 100%;
   margin: auto;
 }
 
-.hours-location p{
+.hours-location p {
   margin: 0;
 }
 
-p a{
+p a {
   text-decoration: underline;
   color: $white;
   font-weight: bold;
 }
 
-p a:hover{
+p a:hover {
   font-weight: bold;
   color: $ww-red;
 }
 
-
-.hours p{
+.hours p {
   margin: 0;
 }
 
-.dine-in, .days, .take-out {
+.days,
+.dine-in,
+.take-out {
   margin-left: 2%;
 }
 
-.hours-location{
+.hours-location {
   display: flex;
   justify-content: center;
 }
-
 //<----------------------------------------------------------------------------->
 //styles for MENU on homepage
-.items-pricing{
+
+.items-pricing {
   color: $white;
   margin: 0;
 }
 
-.wonderdog{
+.wonderdog {
   color: $ww-red;
   font-weight: bold;
 }
 //<----------------------------------------------------------------------------->
 //styles for gallery section of hp
-.gallery-hp{
+
+.gallery-hp {
   padding-bottom: 20px;
 }
 
-.gallery-hp h2{
+.gallery-hp h2 {
   color: $black;
   padding-bottom: 20px;
 }
 
-.carousel-img{
+.carousel-img {
   width: 70%;
-   margin: auto;
+  margin: auto;
 }
-
 //<----------------------------------------------------------------------------->
 //Styles for the footer
-footer{
+
+footer {
   background-color: $black;
 }
-
 //<----------------------------------------------------------------------------->
 //styles for MENU page
-ul.nav-tabs{
-  border-bottom:1px solid $ww-red;
+
+ul.nav-tabs {
+  border-bottom: 1px solid $ww-red;
 }
 
-.nav-tabs{
+.nav-tabs {
   margin-bottom: 3%;
 }
 
-li.nav-item{
+li.nav-item {
   margin-top: 2%;
   margin-right: 1%;
   padding-bottom: 1px;
 }
 
-div.tab-content{
-
-  h1{
+div.tab-content {
+  h1 {
     color: $ww-red;
   }
-  li{
+
+  li {
     list-style: none;
   }
-  h2{
+
+  h2 {
     color: $ww-yellow;
   }
-  p{
+
+  p {
     color: $white;
     font-size: 20px;
     font-weight: lighter;
   }
 }
 
-hr.hr-menu{
+hr.hr-menu {
   border-top: 1px solid $ww-red;
   width: 100%;
   align-self: center;
 }
 
-section.menu-tabs{
+section.menu-tabs {
   margin: 1em;
 
-  a{
+  a {
     color: $white;
     background-color: $ww-light-grey;
   }
-  a:hover{
-      color: $ww-charcoal;
-      background-color: $ww-yellow;
-    }
-  a.nav-link.active{
+
+  a:hover {
+    color: $ww-charcoal;
+    background-color: $ww-yellow;
+  }
+
+  a.nav-link.active {
     color: $white;
     background-color: $ww-red;
     border: 1px solid $ww-red;
   }
 }
-
 //<----------------------------------------------------------------------------->
 //Styles for GALLERY Lightbox
 
 .lightbox-gallery p {
-    color: #fff
+  color: #fff;
 }
 
 .lightbox-gallery h2 {
-    font-weight: bold;
-    margin-bottom: 40px;
-    padding-top: 40px;
-    color: #fff
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: #fff;
 }
-
 @media (max-width:767px) {
-    .lightbox-gallery h2 {
-        margin-bottom: 25px;
-        padding-top: 25px;
-        font-size: 24px
-    }
+  .lightbox-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
 }
 
 .lightbox-gallery .intro {
-    font-size: 16px;
-    max-width: 500px;
-    margin: 0 auto 40px;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
 }
 
 .lightbox-gallery .intro p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .lightbox-gallery .photos {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .lightbox-gallery .item {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
-.item img{
-    object-fit: cover;
-    width:400px;
-    height:300px;
+.item img {
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
 }
 
-
-
-
-
-
-
-
-
-
-//<----------------------------------------------------------------------------->
-//CSS for Mobile view:
-
-@media only screen and (max-width: 995px) {
-
-  div.location{
-    margin-bottom: 5%;
-  }
-
-  .hours-location{
-    display: flex;
-    justify-content: center;
-  }
-
-  .carousel-img{
-    width: 80%;
-     margin: auto;
-  }
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 0;
 }
 
-
-
-
-
-
+.lightbox-gallery .item {
+  padding-right: 1em;
+  padding-bottom: 0;
+}
 //<----------------------------------------------------------------------------->
 //light box css copy and pasted:
+
 body.lb-disable-scrolling {
   overflow: hidden;
 }
@@ -384,7 +441,6 @@ body.lb-disable-scrolling {
   max-width: inherit;
   max-height: none;
   border-radius: 3px;
-
   /* Image border */
   border: 4px solid white;
 }
@@ -400,7 +456,6 @@ body.lb-disable-scrolling {
   height: 250px;
   margin: 0 auto;
   border-radius: 4px;
-
   /* Background color behind image.
      This is visible during transitions. */
   background-color: white;
@@ -427,7 +482,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../img/loading.gif) no-repeat;
+  background: url("../img/loading.gif") no-repeat;
 }
 
 .lb-nav {
@@ -445,10 +500,11 @@ body.lb-disable-scrolling {
 
 .lb-nav a {
   outline: none;
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
 }
 
-.lb-prev, .lb-next {
+.lb-next,
+.lb-prev {
   height: 100%;
   cursor: pointer;
   display: block;
@@ -458,7 +514,7 @@ body.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../img/prev.png) left 48% no-repeat;
+  background: url("../img/prev.png") left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -476,7 +532,7 @@ body.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../img/next.png) right 48% no-repeat;
+  background: url("../img/next.png") right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -540,7 +596,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../img/close.png) top right no-repeat;
+  background: url("../img/close.png") top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -557,32 +613,116 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 
-.col-md-8{
-    padding-top: 10%;
+.col-md-8 {
+  padding-top: 10%;
 }
 
-.mascot{
-  width:100%;
+.mascot {
+  width: 100%;
   margin: auto;
   display: block;
-
 }
-
 @media only screen and (max-width: 780px) {
-  .mascot{
-    width:70%;
+  .mascot {
+    width: 70%;
     margin: auto;
     display: block;
   }
 }
 
-.table{
+.table {
   width: 100%;
   margin-bottom: 1rem;
   color: white;
 }
 
 .table-hover tbody tr:hover {
-    color: $ww-charcoal;
-    background-color: white;
+  color: $ww-charcoal;
+  background-color: white;
+}
+//<----------------------------------------------------------------------------->
+//CSS for Mobile view:
+@media only screen and (max-width: 995px) {
+  div.hours,
+  div.location {
+    margin-bottom: 5%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .col-lg {
+    margin-bottom: 5%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hours-location {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-img {
+    width: 80%;
+    margin: auto;
+  }
+
+  body {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .lightbox-gallery .item {
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+.covid-info {
+  margin-top: 1em;
+  color: $ww-charcoal !important;
+}
+
+.card-title {
+  color: $ww-red;
+}
+
+.card-text {
+  color: $ww-charcoal;
+}
+
+.covid-card {
+  color: $ww-red;
+  background-color: $ww-light-grey;
+}
+
+.gallery-img {
+  transition: all 0.2s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
+  filter: none;
+}
+
+.nav-logo{
+  width: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.covid-collapse{
+  padding-top: 1em;
+}
+
+.badge{
+  display: block;
+  width: 100px;
+  padding: .25em .4em;
+  font-size: 35% !important;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
 }

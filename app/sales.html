@@ -1,24 +1,30 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weiner Works</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weiner Works</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel='icon' href='img/ww-mascot.png' type='image/x-icon' sizes="16x16" />
 </head>
+
 <body>
   <!--HEADER -->
   <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">WeinerWorks</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="img/ww-mascot.png" class="nav-logo"  alt="weiner works logo" title="weiner works wonder weiner">
+        WeinerWorks
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="menu.html">Menu</a>
-          <a class="nav-item nav-link" href="sales.html">Sales</a>
+          <a class="nav-item nav-link active" href="sales.html">Sales</a>
           <a class="nav-item nav-link" href="gallery.html">Gallery</a>
         </div>
       </div>
@@ -30,24 +36,49 @@
     <div class="p-5 text-center header-banner">
       <h1 class="mb-3">Specials and Sales!</h1>
       <h4 class="mb-3">Some great deals for some great food!</h4>
-      <a class="btn btn-primary" href="https://www.grubhub.com/restaurant/wiener-works-5207-madison-ave-ste-c-sacramento/383533" target="_blank" role="button">Order on GrubHub</a>
+      <a class="btn btn-primary" href="https://www.grubhub.com/restaurant/wiener-works-5207-madison-ave-ste-c-sacramento/383533" target="_blank" role="button" data-toggle="tooltip" data-placement="bottom" title="Open GrubHub in New Tab">Order on
+        GrubHub</a>
     </div class="p-5 text-center">
 
-    <hr></hr>
+    <hr>
+    </hr>
     <!-- location and hours section -->
-    <section>
+    <section class="sale-cards">
+
       <div class="container">
         <div class="row">
           <div class="col-lg">
-            <h1>Special:</h1>
-            <h2>7" Hot Dog Special</h2>
-            <p>A plain 7in all beef hot dog with a tiny fry and 24ox soda.</p>
-            <p>$9.30+</p>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/hotdog-sale.jpg">
+              <div class="card-body">
+                <h5 class="card-title">7" Hot Dog Special</h5>
+                <p class="card-text">A plain 7in all beef hot dog with a tiny fry and 24ox soda.</p>
+                <p class="card-text">$9.30+</p>
+              </div>
+            </div>
           </div>
           <div class="col-lg">
-            <img class="img-fluid" src="img/hotdog-sale.jpg">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/frankenburger.jpg">
+              <div class="card-body">
+                <h5 class="card-title">The Frankenburger</h5>
+                <p class="card-text">Grilled hot dog between 2 burger patties on a grilled hot dog bun.</p>
+                <p class="card-text">$9.99+</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/wonderdog.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Wonderdog!</h5>
+                <p class="card-text">14in! get it plain or as a chili cheese dog.</p>
+                <p class="card-text">$304+</p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
 
       <div>
@@ -90,4 +121,5 @@
   <script src="/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

@@ -1,77 +1,103 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weiner Works</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weiner Works</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel='icon' href='img/ww-mascot.png' type='image/x-icon' sizes="16x16" />
 
 </head>
+
 <body>
   <!--HEADER -->
   <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">WeinerWorks</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="img/ww-mascot.png" class="nav-logo"  alt="weiner works logo" title="weiner works wonder weiner">
+        WeinerWorks
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="menu.html">Menu</a>
           <a class="nav-item nav-link" href="sales.html">Sales</a>
-          <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+          <a class="nav-item nav-link active" href="gallery.html">Gallery</a>
         </div>
       </div>
     </nav>
   </header>
   <!--MAIN -->
   <main>
+    <!-- COVID alert -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>ATTENTION</strong> Due to COVID restrictions weiner works is no longer serving dine-in. Take-out is still available.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
     <!-- Page Header -->
     <div class="p-5 text-center header-banner">
       <h1 class="mb-3">Weiner Works Gallery</h1>
       <a class="btn btn-primary" href="https://www.grubhub.com/restaurant/wiener-works-5207-madison-ave-ste-c-sacramento/383533" target="_blank" role="button">Order on GrubHub</a>
     </div class="p-5 text-center">
 
-<hr></hr>
-    <!-- Gallery lightbox-->
-      <section>
 
-        <div class="lightbox-gallery">
-            <div class="container">
-                <div class="intro">
-                    <h2 class="text-center">Photos Taken by Customers!</h2>
-                    <p class="text-center">Click on an image to enlarge.</p>
+
+
+    <hr>
+    </hr>
+    <!-- Gallery lightbox-->
+    <section>
+
+      <div class="lightbox-gallery">
+        <div class="container">
+          <div class="intro">
+            <h2 class="text-center">Photos Taken by Customers!</h2>
+            <p class="text-center">Click on an image to enlarge.</p>
+            <div class="covid-collapse text-center">
+              <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  COVID Information
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body covid-card">
+                  Masks are required upon entry. Take-out Only.
                 </div>
-                <div class="row photos">
-                    <div class="col-sm-6 col-md-4 col-lg-3 item">
-                      <a href="img/ww0.jpg" data-lightbox="photos">
-                        <img class="img-fluid" src="img/ww0.jpg">
-                      </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww1.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww1.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww2.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww2.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww3.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww3.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww4.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww4.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww5.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww5.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww6.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww6.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww7.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww7.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww8.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww8.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww9.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww9.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww10.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww10.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww11.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww11.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww12.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww12.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww13.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww13.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww14.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww14.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww15.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww15.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww19.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww19.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww23.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww23.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww39.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww39.jpg"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/ww6.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww6.jpg"></a></div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="row photos">
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww1.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww0.jpg" alt="photo of weiner works store front" title="weiner works store front"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww1.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww1.jpg"alt="photo of a hand next to a wonderdog" title="Sizing it up"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww2.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww2.jpg"alt="photo of beer on tap displayed" title="On tap"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww3.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww3.jpg"alt="photo of the inside of weiner works filled with customers" title="A small gathering"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww4.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww4.jpg"alt="photo of the inside of weiner works empty" title="Interior"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww5.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww5.jpg"alt="photo of chilli cheese fries" title="chilli cheese fries"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww6.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww6.jpg"alt="photo of chilli cheese fries with onions" title="chilli cheese fries with onions"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww7.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww7.jpg"alt="photo of chilli cheese fries" title="chilli cheese fries"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww8.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww8.jpg"alt="photo of two open faced burgers and fries" title="open face burgers"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww9.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww9.jpg"alt="photo of a double cheeseburger" title="double cheeseburger"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww10.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww10.jpg"alt="photo of a display of a hotdog with a hat on" title="local mascot"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww11.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww11.jpg"alt="photo of a cup of beer" title="cup of beer"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww12.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww12.jpg"alt="photo of a glass of beer" title="pint of beer"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww13.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww13.jpg"alt="photo of the weiner works menu board" title="menu"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww14.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww14.jpg"alt="photo of a chilli chees dog next to fries" title="chilli dog and fries"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww15.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww15.jpg"alt="photo of a frankenburger" title="frankenburger"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww19.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww19.jpg"alt="photo of a table covered with plates of food" title="lots of food"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww23.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww23.jpg"alt="arial photo of a table with food" title="large portions"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww39.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww39.jpg"alt="photo of a child biting into a burger" title="child friendly"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item gallery-img"><a href="img/ww6.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ww6.jpg"alt="photo of chilli cheese fries with onions" title="chillie cheese fries with onions"></a></div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
 
@@ -89,7 +115,7 @@
           <button type="button" class="btn btn-outline-light btn-rounded footer-btn">
             Order Now!
           </button>
-      </p>
+        </p>
       </section>
     </div>
 
@@ -105,4 +131,5 @@
   <script src="/js/lightbox-plus-jquery.js"></script>
 
 </body>
+
 </html>
